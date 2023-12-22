@@ -1,0 +1,23 @@
+{
+  "name": "primerapreentrega",
+  "version": "1.0",
+  "description": "Se desarrollará un servidor que contenga los endpoints y servicios necesarios para gestionar los productos y carritos de compra en el e-commerce",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "src/app.js",
+    "dev": "concurrently \"npm run start\" \"nodemon src/app.js\" \"npm run watch:css\"",
+    "watch:css": "sass --watch src/public/scss/style.scss:src/public/css/style.css",
+    "setup": "npm install express && npm install -g nodemon && npm install -g sass && npm install sweetalert2"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "sass": "^1.68.0",
+    "sweetalert2": "^11.10.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

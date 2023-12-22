@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <!-- Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- JS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Link CSS Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Gboys</title>
+  <link rel="icon" href="https://oasisinet.com/wp-content/uploads/2022/05/cropped-oasis-fav-32x32.png" sizes="32x32" />
+</head>
+<!-- Comienza el body -->
+
+<body class="body-contact">
+  <header class="base-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar_oasis">
+      <div class="container">
+        <img class="d-inline-block align-text-top logo_Infinity" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" class="nav_ul"
+            style="--bs-scroll-height: 100px">
+            <li class="nav-item">
+              {{!-- <a class="nav-link active" aria-current="page" href="index.html">Home</a> --}}
+            </li>
+          </ul>
+          <form class="d-flex">
+            <p id="items" class="bi bi-brightness-alt-high"></p>
+            <div class="form-check form-switch slider">
+              <input title="checkbox-datascheme" class="form-check-input" type="checkbox" role="switch" id="slider" />
+            </div>
+            <p id="items" class="bi bi-moon-fill"></p>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="base-content">
+    {{{body}}}
+  </main>
+  <script>
+    //JS Boostrap // Example starter JavaScript for disabling form submissions
+    if there are invalid fields(() => {
+      "use strict"; // Fetch all the forms
+      we want to apply custom Bootstrap validation styles to const forms =
+        document.querySelectorAll(".needs-validation"); // Loop over them and
+      prevent submission Array.from(forms).forEach((form) => {
+          form.addEventListener("submit", (event) => {
+            if (!form.checkValidity()) {
+              event.preventDefault(); event.stopPropagation();
+            }
+            form.classList.add("was-validated");
+          }, false);
+        });
+    })();
+  </script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+  
+
+</body>
+
+</html>
